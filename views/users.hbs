@@ -1,0 +1,11 @@
+<h1>Users of Jersey City</h2>
+<button><a href="users/new">Create a New User</a></button>
+{{#each owners}}
+    <tr>
+        <td>{{this.id}}</td>
+        <td>{{this.email}}</td>
+        <td><a class='btn waves-blue waves-effect' href='/users/{{this.id}}'>Edit</a></td>
+        <td>
+            <form action='/users/{{this.id}}/delete?_method=delete' method='post'><button class='btn waves-blue waves-effect' type='submit'>Delete</form></button></td>
+    </tr>
+{{/each}}

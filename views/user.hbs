@@ -1,0 +1,15 @@
+<h3>Edit User</h3>
+<div class="col s12 m9">
+                <form action="{{data.id}}/update" method="post">
+                    <div class="input-field col s6">
+                      <label for="first_name">Email</label>
+                      <input value="{{data.email}}" name="email" type="email">
+                    </div>
+                    <div class="input-field col s6">
+                      <label for="last_name">Password</label>
+                      <input value="{{data.password}}" name="password" id="password" type="text">
+                    </div>
+                    <button class="btn red" type="reset" name="cancel">Clear Changes</button>
+                    <button class="btn green" type="submit">Save</button>
+                </form>
+            </div>
